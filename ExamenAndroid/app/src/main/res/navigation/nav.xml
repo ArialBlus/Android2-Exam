@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.androidexam.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/go_cuadrado"
+            app:destination="@id/cuadradoNumero" />
+        <action
+            android:id="@+id/go_raiz"
+            app:destination="@id/raizCuadrada" />
+        <action
+            android:id="@+id/go_antecesor"
+            app:destination="@id/antecesor" />
+        <action
+            android:id="@+id/go_cubo"
+            app:destination="@id/nextCubo" />
+    </fragment>
+    <fragment
+        android:id="@+id/cuadradoNumero"
+        android:name="com.example.androidexam.cuadradoNumero"
+        android:label="fragment_cuadrado_numero"
+        tools:layout="@layout/fragment_cuadrado_numero" />
+    <fragment
+        android:id="@+id/raizCuadrada"
+        android:name="com.example.androidexam.RaizCuadrada"
+        android:label="fragment_raiz_cuadrada"
+        tools:layout="@layout/fragment_raiz_cuadrada" />
+    <fragment
+        android:id="@+id/antecesor"
+        android:name="com.example.androidexam.Antecesor"
+        android:label="fragment_antecesor"
+        tools:layout="@layout/fragment_antecesor" />
+    <fragment
+        android:id="@+id/nextCubo"
+        android:name="com.example.androidexam.nextCubo"
+        android:label="fragment_next_cubo"
+        tools:layout="@layout/fragment_next_cubo" />
+</navigation>
